@@ -22,9 +22,11 @@ namespace pryMartinezRepaso
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            string dato;
-            dato=txtCodigo.Text;
-            MessageBox.Show("Registrado con exito");
+            int codigo;
+            string nombre;
+            nombre = txtNombre.Text;
+            codigo = int.Parse(txtCodigo.Text);
+            MessageBox.Show("El codigo es: "+ codigo+". El nombre es: "+nombre);
         }
     }
 }

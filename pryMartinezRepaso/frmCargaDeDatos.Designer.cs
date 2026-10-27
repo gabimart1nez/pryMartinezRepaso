@@ -31,11 +31,13 @@
             txtCodigo = new TextBox();
             lblCodigo = new Label();
             btnRegistrar = new Button();
+            lblNombre = new Label();
+            txtNombre = new TextBox();
             SuspendLayout();
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(77, 20);
+            txtCodigo.Location = new Point(77, 17);
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(118, 23);
             txtCodigo.TabIndex = 0;
@@ -52,7 +54,7 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(142, 67);
+            btnRegistrar.Location = new Point(142, 102);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(71, 25);
             btnRegistrar.TabIndex = 2;
@@ -60,11 +62,29 @@
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
+            // lblNombre
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(12, 59);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(51, 15);
+            lblNombre.TabIndex = 3;
+            lblNombre.Text = "Nombre";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(77, 56);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(118, 23);
+            txtNombre.TabIndex = 4;
+            // 
             // frmCargaDeDatos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(225, 117);
+            ClientSize = new Size(225, 144);
+            Controls.Add(txtNombre);
+            Controls.Add(lblNombre);
             Controls.Add(btnRegistrar);
             Controls.Add(lblCodigo);
             Controls.Add(txtCodigo);
@@ -81,5 +101,7 @@
         private TextBox txtCodigo;
         private Label lblCodigo;
         private Button btnRegistrar;
+        private Label lblNombre;
+        private TextBox txtNombre;
     }
 }
