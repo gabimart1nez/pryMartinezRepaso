@@ -29,11 +29,10 @@ namespace pryMartinezRepaso
         {
             int monto;
             monto = int.Parse(txtMonto.Text);
-            float resultado;
-            if{
-                cbIva.SelectedIndex == 0 
+            //float resultado;
+            
             }
             
         }
     }
-}
+
